@@ -17,6 +17,16 @@ export class AppComponent implements OnInit {
         title: 'Avenger 2',
         price: 200_000,
         releaseDate: new Date('2012-03-08')
+      },
+      {
+        title: 'Avenger',
+        price: 200_000,
+        releaseDate: new Date('2012-03-25')
+      },
+      {
+        title: 'Avenger 2',
+        price: 200_000,
+        releaseDate: new Date('2012-03-08')
       }
     ];
 
@@ -39,4 +49,8 @@ export class AppComponent implements OnInit {
   moviesFutureRelease: any[] | undefined;
 
   title = 'balad-movie';
+
+  handleRating(selectedRate: number): void {
+    alert(`The user selected ${selectedRate}`)
+  }
 }

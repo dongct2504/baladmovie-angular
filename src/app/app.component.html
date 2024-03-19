@@ -1,7 +1,13 @@
-<h1>This is a simple movie app</h1>
+<app-menu></app-menu>
 
-<h2>Movies in theater</h2>
-<app-movie-list [movies]="moviesInTheater"></app-movie-list>
+<app-rating (onRating)="handleRating($event)"></app-rating>
 
-<h2>Movies will release in future</h2>
-<app-movie-list [movies]="moviesFutureRelease"></app-movie-list>
+<div class="container">
+    <h1>This is a simple movie app</h1>
+
+    <h2>Movies in theater</h2>
+    <app-movie-list [movies]="moviesInTheater"></app-movie-list>
+
+    <h2>Movies will release in future</h2>
+    <app-movie-list [movies]="moviesFutureRelease"></app-movie-list>
+</div>
